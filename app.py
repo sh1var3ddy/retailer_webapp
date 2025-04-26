@@ -20,9 +20,9 @@ app = Flask(__name__)
 
 
 server = 'retaildata-server.database.windows.net'
-database = 'RetailData'
-username = 'user'
-password = 'Retail@1234'
+database = 'retail_db'
+username = 'varshith'
+password = 'jyothi@07'
 password = urllib.parse.quote_plus(password)
 
 connection_string = f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver=ODBC+Driver+17+for+SQL+Server"
