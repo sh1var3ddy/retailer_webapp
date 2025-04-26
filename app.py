@@ -22,7 +22,7 @@ app = Flask(__name__)
 server = 'retail-server7.database.windows.net'
 database = 'retail_db'
 username = 'varshith'
-password = 'jyothi@07'
+password = 'Jyothi@07'
 password = urllib.parse.quote_plus(password)
 
 connection_string = f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver=ODBC+Driver+17+for+SQL+Server"
