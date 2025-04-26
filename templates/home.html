@@ -60,7 +60,7 @@
         }
 
         .table th {
-    background-color: #0056b3;  /* Darker blue for headers */
+    background-color: #0012b3;  /* Darker blue for headers */
     color: white;
     font-weight: 600;
     vertical-align: middle;
@@ -120,13 +120,13 @@
     <div class="header-section">
         <h2 class="page-title">Retail Analytics</h2>
         <div class="button-container">
-            <a href="{{ url_for('demographicsandengagement') }}" class="btn btn-primary">
+            <a href="{{ url_for('demographicsandengagement') }}" class="btn btn-success">
                 <i class="fas fa-chart-bar mr-2"></i>Dashboards
             </a>
-            <a href="{{ url_for('uploaddatasets') }}" class="btn btn-primary">
+            <a href="{{ url_for('uploaddatasets') }}" class="btn btn-success">
                 <i class="fas fa-chart-bar mr-2"></i>Upload
             </a>
-            <a href="{{ url_for('predictproducts') }}" class="btn btn-primary mr-2">
+            <a href="{{ url_for('predictproducts') }}" class="btn btn-success mr-2">
                 <i class="fas fa-chart-bar mr-2"></i>Predict Products
             </a>
             <a href="{{ url_for('logout') }}" class="btn btn-danger">
@@ -137,8 +137,8 @@
 
     <div class="content-section">
         <!-- HSHD_NUM Dropdown -->
-        <div class="search-container">
-            <h4>Select Transactions by Household number</h4>
+        <div class="search-container d-flex align-items-center">
+            <h4 class="mr-2">Select Transactions by Household number</h4>
             <form id="searchForm">
                 <div class="form-group select-dropdown">
                     <select id="hshd_num" class="form-control" onchange="getDashboardData()">
