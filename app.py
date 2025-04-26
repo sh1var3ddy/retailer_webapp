@@ -9,9 +9,9 @@ from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import mean_squared_error
-import joblib
+from sklearn.preprocessing import LabelEncoder # type: ignore
+from sklearn.metrics import mean_squared_error # type: ignore
+import joblib # type: ignore
 from datetime import datetime
 import os
 from dotenv import load_dotenv
@@ -19,10 +19,10 @@ from dotenv import load_dotenv
 app = Flask(__name__)
 
 
-server = 'retail-server7.database.windows.net'
-database = 'retail_db'
-username = 'varshith'
-password = 'Jyothi@07'
+server = 'shivaroot.database.windows.net'
+database = 'kroger'
+username = 'shivaroot'
+password = 'Shiva@2002'
 password = urllib.parse.quote_plus(password)
 
 connection_string = f"mssql+pyodbc://{username}:{password}@{server}/{database}?driver=ODBC+Driver+17+for+SQL+Server"
@@ -34,10 +34,10 @@ engine = create_engine(connection_string)
 def get_db_connection():
     conn = pyodbc.connect(
         'DRIVER={ODBC Driver 17 for SQL Server};'
-        'SERVER=retail-server7.database.windows.net;'
-        'DATABASE=retail_db;'
-        'UID=varshith;'
-        'PWD=Jyothi@07'
+        'SERVER=shivaroot.database.windows.net;'
+        'DATABASE=kroger;'
+        'UID=shivaroot;'
+        'PWD=Shiva@2002;'
     )
     return conn
 
