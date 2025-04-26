@@ -34,10 +34,10 @@ engine = create_engine(connection_string)
 def get_db_connection():
     conn = pyodbc.connect(
         'DRIVER={ODBC Driver 17 for SQL Server};'
-        'SERVER=retaildata-server.database.windows.net;'
-        'DATABASE=RetailData;'
-        'UID=user;'
-        'PWD=Retail@1234'
+        'SERVER=retail-server7.database.windows.net;'
+        'DATABASE=retail-db;'
+        'UID=varshith;'
+        'PWD=Jyothi@07'
     )
     return conn
 
