@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 app = Flask(__name__)
 
 
-server = 'retaildata-server.database.windows.net'
+server = 'retail-server7.database.windows.net'
 database = 'retail_db'
 username = 'varshith'
 password = 'jyothi@07'
